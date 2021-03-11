@@ -1,4 +1,4 @@
-package com.pet.petclinic.services.map;
+package com.pet.petclinic.services;
 
 import com.pet.petclinic.model.PetType;
 import com.pet.petclinic.services.CrudService;
