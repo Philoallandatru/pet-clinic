@@ -8,10 +8,10 @@ import java.util.Set;
 @Table(name = "owners")
 public class Owner extends  Person{
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "owners")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "owner")
     private Set<Pet> pets = new HashSet<>();
 
-    @Column(name = "city")
+    @Column(name = "address")
     private String address;
 
     @Column(name = "city")
