@@ -1,12 +1,23 @@
 package com.pet.petclinic.model;
 
+import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
+@Entity
+@Table(name = "owners")
 public class Owner extends  Person{
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "owners")
     private Set<Pet> pets = new HashSet<>();
+
+    @Column(name = "city")
     private String address;
+
+    @Column(name = "city")
     private String city;
+
+    @Column(name = "telephone")
     private String telephone;
 
     public String getAddress() {
